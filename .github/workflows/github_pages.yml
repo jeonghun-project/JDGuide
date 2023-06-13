@@ -26,5 +26,5 @@ jobs:
           git remote add origin ${{ secrets.SSH_REPOSITORY }}
           git add .
           git commit -m "deploy"
-          git push -f origin gh-pages
+          git push -f origin main:gh-pages
       
