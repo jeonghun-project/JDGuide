@@ -16,9 +16,9 @@ jobs:
       
       - name: push to pages branch
         run: |
-          git config --global user.name "${{ env.USER_NAME }}"
-          git config --global user.email "${{ env.EMAIL }}"
+          git config --global user.name "${{ secrets.USER_NAME }}"
+          git config --global user.email "${{ secrets.EMAIL }}"
           git commit -m -a "new version deploy"
-          git remote add origin ${{ env.SSH_REPOSITORY }}
+          git remote add origin ${{ secrets.SSH_REPOSITORY }}
           git push origin gh-pages
       
