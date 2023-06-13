@@ -23,7 +23,7 @@ jobs:
         working-directory: ./src/.vuepress/dist
         run: |      
           git init
-          git remote add origin ${{ secrets.SSH_REPOSITORY }}
+          git remote add origin https://jeonghun-project:${{secrets.ACCESS_TOKEN}}@github.com/jeonghun-project/JDGuide.git
           git add .
           git commit -m "deploy"
           git push -f origin main:gh-pages
