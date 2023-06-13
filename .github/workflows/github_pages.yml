@@ -20,5 +20,6 @@ jobs:
           git config --global user.name "${{ env.USER_NAME }}"
           git config --global user.email "${{ env.EMAIL }}"
           git commit -m -a "new version deploy"
+          git remote add origin ${{ env.SSH_REPOSITORY }}
           git push origin gh-pages
       
