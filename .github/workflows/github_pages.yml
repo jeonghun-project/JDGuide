@@ -20,9 +20,11 @@ jobs:
           git switch gh-pages
       
       - name: push to pages branch
-        working-directory: ./src/.vuepress
+        working-directory: ./src/.vuepress/dist
         run: |      
-          git add ./dist
-          git commit -m "new version deploy"
+          git init
+          git remote add origin ${{ secrets.SSH_REPOSITORY }}
+          git add .
+          git commit -m "deploy"
           git push -f origin gh-pages
       
