@@ -16,6 +16,9 @@ jobs:
       
       
       - name: push to pages branch
-        uses: actions/checkout@main
-      - run: ls -al
+      - run: |
+          git config --global user.name "${{ env.USER_NAME }}"
+          git config --global user.email "${{ env.EMAIL }}"
+          git commit -m -a "new version deploy"
+          git push origin gh-pages
       
