@@ -6,7 +6,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@main
-      
       - name: Use Node.js 
         uses: actions/setup-node@v3
         with:
@@ -16,7 +15,7 @@ jobs:
       
       
       - name: push to pages branch
-      - run: |
+        run: |
           git config --global user.name "${{ env.USER_NAME }}"
           git config --global user.email "${{ env.EMAIL }}"
           git commit -m -a "new version deploy"
