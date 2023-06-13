@@ -1,8 +1,5 @@
-name: Node.js Package
-
-on:
-  release:
-    types: [push]
+name: github pages build and deploy
+on: [push]
 
 jobs:
   build:
