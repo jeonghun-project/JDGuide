@@ -13,13 +13,16 @@ jobs:
       - run: npm install
       - run: npm run build
       
-      - name: push to pages branch
-        working-directory: ./src/.vuepress
+      - name: git init
         run: |
           git config --global user.name "${{ secrets.USER_NAME }}"
           git config --global user.email "${{ secrets.EMAIL }}"
-          git add ./dist
           git pull origin gh-pages
+      
+      - name: push to pages branch
+        working-directory: ./src/.vuepress
+        run: |      
+          git add ./dist
           git commit -m "new version deploy"
           git push -f origin gh-pages
       
