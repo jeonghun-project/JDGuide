@@ -13,7 +13,6 @@ jobs:
       - run: npm install
       - run: npm run build
       
-      - uses: actions/checkout@gh-pages
       - name: push to pages branch
         working-directory: ./src/.vuepress
         run: |
