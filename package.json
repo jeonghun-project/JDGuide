@@ -1,0 +1,19 @@
+{
+  "name": "JDGuide",
+  "version": "0.0.1",
+  "description": "Korean&#39;s True Tour of Korea",
+  "main": "index.js",
+  "authors": {
+    "name": "CHOI JEONGHUN",
+    "email": "dsjoh111@gmail.com"
+  },
+  "repository": "https://github.com/jeonghun-project/JDGuide/JDGuide",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
