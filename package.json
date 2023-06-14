@@ -14,6 +14,10 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "eslint-config-vuepress": "^4.1.1",
+    "eslint-config-vuepress-typescript": "^4.1.1",
+    "prettier-config-vuepress": "^4.0.0",
+    "tsconfig-vuepress": "^4.1.0",
     "vuepress": "^1.5.3"
   }
 }
