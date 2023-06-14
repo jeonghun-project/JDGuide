@@ -5,26 +5,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@main
-      - name: Use Node.js 
-        uses: actions/setup-node@v3
-        with:
-          node-version: 16
-      - run: npm install
-      - run: npm run build
-      
-      - name: git init
-        run: |
-          git config --global user.name "${{ secrets.USER_NAME }}"
-          git config --global user.email "${{ secrets.EMAIL }}"
-          git config --global init.defaultBranch main
-      
-      - name: push to pages branch
-        working-directory: ./src/.vuepress/dist
-        run: |      
-          git init
-          git remote add origin https://jeonghun-project:${{secrets.ACCESS_TOKEN}}@github.com/jeonghun-project/JDGuide.git
-          git add .
-          git commit -m "deploy"
-          git push -f origin main:gh-pages
-      
+      - name: Checkout
+        uses: actions/checkout@main
+
+      - name: vuepress-deploy
+        uses: jenkey2011/vuepress-deploy@master
+        env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          TARGET_REPO: jeonghun-project/JDGuide
+          TARGET_BRANCH: main
+          BUILD_SCRIPT: yarn && yarn docs:build
+          BUILD_DIR: src/.vuepress/dist
