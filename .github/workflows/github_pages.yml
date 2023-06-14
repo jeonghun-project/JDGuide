@@ -15,4 +15,4 @@ jobs:
           TARGET_REPO: jeonghun-project/JDGuide
           TARGET_BRANCH: gh-pages
           BUILD_SCRIPT: yarn && yarn build
-          BUILD_DIR: src/
+          BUILD_DIR: src/.vuepress/dist
