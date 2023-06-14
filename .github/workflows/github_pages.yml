@@ -14,5 +14,5 @@ jobs:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           TARGET_REPO: jeonghun-project/JDGuide
           TARGET_BRANCH: main
-          BUILD_SCRIPT: yarn && yarn src:build
-          BUILD_DIR: src/.vuepress/dist
+          BUILD_SCRIPT: yarn && yarn build
+          BUILD_DIR: src/
