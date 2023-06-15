@@ -37,6 +37,8 @@
 우리는 서버는 전혀 어디있는지 몰라도 되게끔 무료로 제공되고 매우 간단한 서버로 처음에 구성을 할 겁니다. 두려워 하실 필요가 없어요!!
 :::
 
+<div style="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe src="https://giphy.com/embed/PNvpLT08WOo5jsKJI8" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/originals-dog-puppy-motivational-PNvpLT08WOo5jsKJI8">do not worry</a></p>
+
 블로그의 트래픽(조회 수)가 굉장한 편이 아니라면 이런 매우 간단한 서버로도 충분히 운영하실 수 있을거에요.
 우리가 사용할 서버는 [Github](https://github.com/) 이라는 개발자 도구에서 제공하는 무료서버를 사용할 거에요.
 
