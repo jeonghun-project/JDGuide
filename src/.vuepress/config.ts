@@ -27,16 +27,8 @@ export default defineConfig({
     smoothScroll: true,
     nav: [
       {
-        text: "Guide",
+        text: "vuepress",
         link: "/guide/1_vuepressFirst",
-      },
-      {
-        text: "Config",
-        link: "/config/",
-      },
-      {
-        text: "VuePress",
-        link: "https://v1.vuepress.vuejs.org",
       },
       {
         text: "GitHub",
