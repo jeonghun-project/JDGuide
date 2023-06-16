@@ -28,7 +28,7 @@ export default defineConfig({
     nav: [
       {
         text: "Guide",
-        link: "/guide/vuepressFirst",
+        link: "/guide/1_vuepressFirst",
       },
       {
         text: "Config",
