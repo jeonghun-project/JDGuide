@@ -38,9 +38,10 @@ MAC 에는 자체적인 콘솔 도구가 있습니다. terminal 이라고 불리
 :::
 
 ::: details Window
-Window 같은 경우에는 조금 더 복잡합니다. 천천히 잘 따라 오세요.
+Window 에서는 `PowerShell`을 사용할 것 입니다. 찾기에서 `PowerShell`이라고 검색하면 쉽게 찾아 볼 수 있습니다.
 
-이 가이드를 잘 따라왔지만 원하는 결과를 얻지 못하셨다면 더 자세한 가이드 링크를 참고해 보세요.
+그럼 다음과 같은 창을 볼 수 있을겁니다
+![PowerShell](../guide/src/powershell.png)
 :::
 
 ### 코드 에디터
